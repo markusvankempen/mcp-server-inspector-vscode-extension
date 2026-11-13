@@ -15,13 +15,13 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](#overview)
 [![Privacy](https://img.shields.io/badge/privacy-no_telemetry-informational.svg)](PRIVACY.md)
 
-[![GitHub stars](https://img.shields.io/github/stars/markusvankempen/mcp-server-inspector-vscode-extentsion?style=social)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/markusvankempen/mcp-server-inspector-vscode-extentsion/network/members)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/markusvankempen/mcp-server-inspector-vscode-extentsion)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion/issues)
-[![Last commit](https://img.shields.io/github/last-commit/markusvankempen/mcp-server-inspector-vscode-extentsion)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion/commits/main)
-[![Repo size](https://img.shields.io/github/repo-size/markusvankempen/mcp-server-inspector-vscode-extentsion)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion)
-[![Top language](https://img.shields.io/github/languages/top/markusvankempen/mcp-server-inspector-vscode-extentsion)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion/pulls)
+[![GitHub stars](https://img.shields.io/github/stars/markusvankempen/mcp-server-inspector-vscode-extension?style=social)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/markusvankempen/mcp-server-inspector-vscode-extension/network/members)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/markusvankempen/mcp-server-inspector-vscode-extension)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension/issues)
+[![Last commit](https://img.shields.io/github/last-commit/markusvankempen/mcp-server-inspector-vscode-extension)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/markusvankempen/mcp-server-inspector-vscode-extension)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension)
+[![Top language](https://img.shields.io/github/languages/top/markusvankempen/mcp-server-inspector-vscode-extension)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension/pulls)
 
 ![Server view](store/screenshot-6-vscode-server-view.png)
 
@@ -186,7 +186,7 @@ Need to test the inspector or explore MCP features without an external server ru
 
 ## Source Code & Access
 
-This repository contains **documentation only** (README, changelog, privacy policy, screenshots, and listing metadata). The VS Code extension source code and development workspace are maintained in the private repository: [`markusvankempen/mcp-server-inspector-vscode-extentsion-dev`](https://github.com/markusvankempen/mcp-server-inspector-vscode-extentsion-dev).
+This repository contains **documentation only** (README, changelog, privacy policy, screenshots, and listing metadata). The VS Code extension source code and development workspace are maintained in the private repository: [`markusvankempen/mcp-server-inspector-vscode-extension-dev`](https://github.com/markusvankempen/mcp-server-inspector-vscode-extension-dev).
 
 ---
 
