@@ -1,0 +1,169 @@
+================================================================================
+IMAGES  (mcp-chrome-extension/store/)
+All PNG, 24-bit RGB, no alpha. Exact Chrome Web Store sizes.
+
+Global screenshots (1280x800) — upload in this order:
+  screenshot-1-spec-matrix.png      3-Tier Specification & Compliance Matrix (100% Score)
+  screenshot-2-tools-runner.png     Tool Catalog & Live Dynamic Form Invocation
+  screenshot-3-batch-validation.png Automated Batch JSONSchema Draft-07 Health Probes
+  screenshot-4-readme-drift.png     GitHub README vs Live Server Capability Drift Analyzer
+  screenshot-5-groups-explorer.png  Progressive Disclosure Groups & Token Savings (SEP-19/21)
+
+Small promo tile (440x280):
+  promo-small-440x280.png
+
+Marquee promo tile (1400x560):
+  promo-marquee-1400x560.png
+
+================================================================================
+CHROME WEB STORE — PASTE-READY COPY
+================================================================================
+
+NAME
+MCP Server Inspector & Spec Auditor
+
+SHORT DESCRIPTION  (max 132 characters — 128 used)
+Developer workbench for testing Model Context Protocol (MCP) servers, tool JSONSchemas, SEPs, latency, and progressive disclosure.
+
+CATEGORY
+Developer Tools
+
+LANGUAGE
+English (default)
+
+HOMEPAGE
+https://markusvankempen.github.io/
+
+PRIVACY POLICY  (Chrome Web Store field)
+https://github.com/markusvankempen/mcp-ticket-demo/blob/main/PRIVACY.md
+
+SUPPORT
+https://markusvankempen.github.io/
+
+SINGLE PURPOSE
+Inspect, validate, and audit Model Context Protocol (MCP) servers, tool JSONSchema contracts, and protocol specification compliance.
+
+PERMISSION JUSTIFICATION
+storage & unlimitedStorage — persists user-configured endpoints, test settings, and authentication headers locally on this computer. Nothing is sent to external tracking servers.
+host_permissions (http://localhost/*, http://127.0.0.1/*, https://mcp-ticket-demo.onrender.com/*) — allow JSON-RPC 2.0 communication with local MCP servers and the built-in demo server. Access to any other MCP server is requested per origin at runtime (optional_host_permissions) only when the user clicks Connect.
+declarativeNetRequestWithHostAccess — registers one session rule that removes the "Origin" request header from the extension's own MCP requests, so servers that reject browser Origins respond as they would to a standard MCP client.
+
+
+--------------------------------------------------------------------------------
+DETAILED DESCRIPTION  (paste into the Chrome Web Store listing)
+--------------------------------------------------------------------------------
+
+The MCP Server Inspector & Spec Auditor is a full-featured developer workbench and automated compliance test suite for engineers building, testing, and debugging Model Context Protocol (MCP) servers, LLM tool contracts, and protocol extensions.
+
+Whether you are building enterprise MCP servers in Node.js, Python, TypeScript, or Go, or integrating tools with LLM agents (Claude Desktop, Cursor, IBM Bob, Windsurf), this inspector provides immediate visibility into protocol handshakes, schema conformance, runtime latencies, token consumption budgets, and specification compliance.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+KEY CAPABILITIES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 3-Tier Specification Compliance Matrix Report
+Automated testing engine evaluating server conformance across:
+• Tier 1: Current Core Specification (2026-07-28 / Stable) — Lifecycle initialize handshakes, strict JSON-RPC 2.0 error handling (-32601 Method Not Found), tool discovery (tools/*), context resources (resources/*), and reusable prompts (prompts/*).
+• Tier 2: Accepted Protocol Extensions & SEPs — Tool safety annotations (readOnlyHint, idempotentHint, openWorldHint — SEP-1850), workspace roots (SEP-2636), server-initiated sampling (SEP-1577), Catalog + Query token-saving patterns, Server Cards (SEP-2127), list TTL response caching (SEP-2549), and standardized error codes (-32002 Resource Not Found — SEP-2164).
+• Tier 3: Future Proposed SEPs & RFCs — Progressive Disclosure Groups (group/list, group/get — SEP-19 / SEP-21), Structured Tool Failure classification (_meta toolFailure — SEP-3313), Resumable Task Streams (tasks/stream — SEP-2694), Compound Agentic Skills (skills/* — SEP-2640), and Out-of-Band URL Elicitation (SEP-1036).
+• 1-Click Markdown Export: Download or copy full audit reports in GitHub Markdown ready for issues, pull requests, or architecture reviews.
+
+2. Tool JSONSchema Draft-07 & Contract Health Validation
+• Deep validation of inputSchema object structures, parameter constraints, enum definitions, descriptions, and required property integrity.
+• Generates a 0–100% schema health score and pinpoints missing parameter descriptions, syntax anomalies, or non-standard naming.
+• Automated batch dry-run execution: synthesizes valid sample parameters from tool schemas and tests runtime execution across all tools in sequence.
+
+3. Interactive Tool Runner & Live Execution
+• Dynamic Visual Forms: Auto-generates clean, type-safe input form fields directly from any tool's JSONSchema parameters (supports strings, numbers, booleans, and enums).
+• Raw JSON Editor Mode: Easily switch to raw JSON for authoring custom payloads.
+• Live Performance Diagnostics: Measures real-time execution duration (ms), estimated LLM token consumption, byte payload sizes, and classifies structured errors.
+
+4. Progressive Disclosure Groups Explorer (SEP-19 / SEP-21)
+• Inspect partitioned tool capability bundles (group/list and group/get).
+• Automatically calculates prompt context token savings achieved by keeping specialized tool schemas out of the initial system prompt until demanded.
+
+5. GitHub README vs Live Server Drift Analyzer
+• Compare claimed tool counts, resources, and prompt templates documented in repository README.md files against live runtime server discoveries to prevent stale documentation.
+
+6. Token Budget & LLM Context Window Analyzer
+• Breakdown of prompt context tokens consumed per tool definition across standard tokenizers (~3.8–4 bytes/token).
+• Identifies heavyweight schemas consuming disproportionate context budget.
+
+7. Raw JSON-RPC 2.0 Console & Authentication Manager
+• Send arbitrary JSON-RPC protocol payloads with pre-built templates for initialize, tools/call, and group/get.
+• Configure Bearer tokens, X-API-Key, Mcp-Session-Id, and custom HTTP headers stored safely in Chrome local extension storage.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRE-CONFIGURED PRESETS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• Local Test Server: http://127.0.0.1:3000/mcp
+• Render Cloud Live Demo: https://mcp-ticket-demo.onrender.com/mcp
+• Custom Endpoint: Connect to any localhost, intranet, or cloud-hosted MCP endpoint.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIVACY & SECURITY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• 100% Local Execution: Operates entirely inside your browser. No telemetry, no remote analytics, and no third-party tracking.
+• Direct Connection: Requests travel directly from your browser to your specified server endpoint with no intermediate proxies.
+• Secure Local Storage: Tokens and endpoints remain strictly sandboxed within your Chrome profile.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+OPEN SOURCE & RESEARCH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Author: Markus van Kempen
+Research | Floor 7½ 🏢🤏 (https://markusvankempen.github.io/)
+Repository: https://github.com/markusvankempen/mcp-ticket-demo
+License: Apache License 2.0
+
+
+--------------------------------------------------------------------------------
+PRIVACY PRACTICES TAB — REVIEWER FORM SECTIONS
+--------------------------------------------------------------------------------
+
+SINGLE PURPOSE DESCRIPTION  (354 / 1,000 characters)
+Inspect, validate, and audit Model Context Protocol (MCP) servers, tool JSONSchema contracts, and protocol specification compliance. The toolbar action opens a developer workbench providing interactive schema testing, automated specification matrix verification, and progressive disclosure group exploration. No unrelated browsing features are included.
+
+
+STORAGE JUSTIFICATION  (289 / 1,000 characters)
+Used exclusively to save user-configured MCP server endpoint URLs, test profiles, and custom authentication headers (Bearer tokens, API keys) locally on the user's computer via chrome.storage.local. Stored settings never leave the device and are not shared with any third party or remote server.
+
+
+UNLIMITEDSTORAGE JUSTIFICATION  (298 / 1,000 characters)
+Needed because JSON-RPC schema audits, tool definitions, dynamic form drafts, and compliance test results for complex MCP servers with dozens of tools can exceed the default 5MB chrome.storage quota. All data remains strictly local in the user's browser sandbox and is never transmitted externally.
+
+
+DECLARATIVENETREQUESTWITHHOSTACCESS JUSTIFICATION  (686 / 1,000 characters)
+Used for a single session rule that removes the "Origin" request header from the extension's own outgoing JSON-RPC requests. Many remote MCP servers validate the Origin header per the MCP specification to prevent DNS-rebinding attacks, rejecting extension requests (chrome-extension://<id>) with HTTP 403. Without this, the inspector cannot connect to standard servers. The rule applies only to requests initiated by this extension (initiatorDomains = extension ID) directed at user-specified MCP server endpoints. It does not block or redirect traffic, does not inspect or alter response bodies, affects no other sites or extensions, and persists only for the active browser session.
+
+
+HOST PERMISSION JUSTIFICATION  (938 / 1,000 characters)
+The extension is a developer API testing workbench for Model Context Protocol (MCP) servers.
+
+1. Why Host Permissions are needed:
+Developers enter their own server URLs (local, intranet, or cloud endpoints) to inspect tool schemas and protocol compliance via HTTP/SSE JSON-RPC. Install-time hosts are strictly limited to localhost, 127.0.0.1, and the demo server.
+
+2. Why activeTab cannot be used:
+activeTab only grants access to the webpage currently open in a browser tab. An MCP inspector communicates directly with backend server API endpoints via fetch(); the target is a server endpoint, not a browser tab.
+
+3. Least Privilege & Runtime Consent:
+Broad patterns are declared only in optional_host_permissions, never granted at installation. When a developer types a custom URL and clicks "Connect", access is requested on-demand via chrome.permissions.request() for ONLY that specific origin with an explicit user prompt. No background browsing data is ever accessed.
+
+
+--------------------------------------------------------------------------------
+TEST INSTRUCTIONS  (reviewer form)
+--------------------------------------------------------------------------------
+
+1. Install and launch the extension. Click the extension toolbar icon to open the full-screen Inspector workbench (or open index.html directly).
+2. The server preset dropdown defaults to "Render Cloud (Live Demo)" (or "Local Test Server: http://127.0.0.1:3000/mcp"). Click "Connect".
+3. Verify that the sidebar status card turns green ("Online") and loads the server name, tool count, and token metrics.
+4. Tab 1 ("3-Tier Spec Matrix"): Click "Run Specification Audit". Verify that the 3-tier matrix displays compliance results across Core Specifications, Accepted SEPs, and Proposed RFCs, complete with overall score and 1-click Markdown export.
+5. Tab 2 ("Tool Catalog & Runner"): Select any tool from the list (e.g. "describe_server" or "run_query"). Verify that the dynamically generated schema form loads. Click "Execute (tools/call)" to observe the live JSON response, duration latency (ms), and token metrics.
+6. Tab 3 ("Batch Validation"): Click "Run Batch Tool Validation". Verify that the automated tester executes dry-run probes across all tools, displaying JSONSchema Draft-07 conformance badges and runtime health.
+7. Tab 4 ("README Drift"): Click "Fetch Official GitHub README" followed by "Analyze Documentation Drift". Confirm that claimed tools vs live discovered tools match with a consistency score.
+8. Tab 5 ("Token Budget") & Tab 6 ("Groups Explorer"): Review the context token breakdown and test the progressive disclosure groups (group/list and group/get) for scoped tool fetching.
+9. Tab 7 ("Raw JSON-RPC") & Tab 8 ("Auth & Headers"): Test sending custom JSON-RPC calls and saving API keys to Chrome local storage.
+
+The extension requires no paid account or proprietary login. Live demo servers and local mock servers are pre-configured for immediate evaluation.
