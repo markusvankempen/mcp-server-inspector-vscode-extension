@@ -3,6 +3,11 @@
 **Author:** Markus van Kempen  
 [Research | Floor 7½ 🏢🤏](https://markusvankempen.github.io/)
 
+## 1.3.1
+- **SEP-19 / SEP-21 Progressive Disclosure Groups (v1.0.2 Update):** Added support for root-level scoped `tools`, `prompts`, `resources`, and nested `groups` in `groups/get` responses while maintaining backward compatibility with `contents.tools`.
+- **Marketplace Publishing Package:** Updated extension identifier to `mcp-server-inspector-auditor` with bundled icon and optimized packaging.
+- **Enhanced Test Suite & Port Handling:** Robust ephemeral fallback port allocation during automated testing to avoid port collisions.
+
 ## 1.3.0
 - **Local dev server:** the sample mock MCP server is bundled with the extension. Start/stop it from the Server view, the Explorer welcome link or the Command Palette (*Start/Stop Local Dev Server*); it binds to `127.0.0.1` only and the session connects to it automatically.
 - New setting `mcpInspector.devServer.port` (default 3000, range 1024-65535); a busy port is reported with a clear message.
