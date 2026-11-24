@@ -5,7 +5,7 @@
 **An IDE-native developer workbench and specification auditor for Model Context Protocol (MCP) servers, tool JSONSchemas, and SEPs inside Visual Studio Code.**
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-1.3.1-brightgreen.svg)](#overview)
+[![Version](https://img.shields.io/badge/version-1.6.0-brightgreen.svg)](#overview)
 [![VS Code](https://img.shields.io/badge/VS_Code_Extension-1.90%2B-007ACC?logo=visualstudiocode&logoColor=white)](#overview)
 [![MCP](https://img.shields.io/badge/Model_Context_Protocol-compatible-7c5cd8.svg)](https://modelcontextprotocol.io)
 [![JSON-RPC 2.0](https://img.shields.io/badge/JSON--RPC-2.0-orange.svg)](https://www.jsonrpc.org/specification)
